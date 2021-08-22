@@ -4,15 +4,325 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Whitney, Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+/* Common */
 .debug {
     background-color: burlywood;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
-.wrapper{
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
+.w-100 {
+    width: 100%;
+    background-color: rgb(0, 110, 255);
 }
 
-#logo-png {
-
+.section-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 70%;
 }
+
+.w-60 {
+    width: 50%;
+}
+
+.btn-white {
+    padding: 10px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.btn-black {
+    padding: 10px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+.btn-violet {
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(128, 136, 255, 0.8);
+    color: white;
+    border-radius: 20px;
+}
+
+.fa-long-arrow-alt-down {
+    font-size: 90%;
+}
+
+.text-violet {
+    color: rgba(128, 136, 255, 0.8);
+    font-weight: bold;
+}
+
+.text-white {
+    color: white;
+}
+
+.font-80 {
+    font-size: 80%;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.pr-2 {
+    padding-right: 10px;
+}
+/* Fine common */
+
+/* Menù */
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 110, 255);
+}
+
+#nav-left {
+    float: left;
+    width: 15%;
+    text-align: right;
+}
+
+#nav-left #logo {
+    line-height: 50px;
+}
+
+#nav-left #logo img {
+    width: 60%;
+    vertical-align: middle;
+}
+
+#nav-center {
+    float: left;
+    width: 70%;
+}
+
+#nav-center ul{
+    text-align: center;
+    }
+
+nav #nav-center li {
+    display: inline;
+    list-style: none;
+    margin-right: 3.5%;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+nav #nav-center ul li a {
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+#nav-right {
+    float: left;
+    width: 15%;
+    text-align: left;
+}
+
+#nav-right #accedi {
+    line-height: 50px;                      
+    font-size: 80%;
+    color: rgb(25, 34, 33);
+}
+/* Fine menù */
+
+/* Banner */
+.banner {
+    position: relative;
+    min-height: 500px;
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .container-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.banner .container-banner h1 {
+    font-size: 250%;
+}
+
+.banner .container-banner p {
+    margin-top: 6%;
+    margin-bottom: 4.5%;
+}
+
+.banner .container-banner .btn .btn-white .arrow {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.banner .container-banner .btn .btn-white {
+    margin-right:  1%;
+}
+/* Fine banner */
+
+/* Main */
+.section-white {
+    position: relative;
+    background-color: white;
+    height: 500px;
+}
+
+.section-gray {
+    position: relative;
+    background-color: rgb(233, 233, 233);
+    height: 500px;
+}
+
+.box-img {
+    float: left;
+    width: 60%;
+}
+
+.box-img img {
+    width: 100%;
+}
+
+.box-text {
+    float: left;
+    margin: 0 5%;
+    width: 27%;
+}
+
+.box-text h1 {
+    font-size: 200%;
+    margin-bottom: 5%;
+}
+
+.box-text p {
+    font-size: 90%;
+}
+
+main .section4 {
+    position: relative;
+    background-color: rgb(233, 233, 233);
+    min-height: 900px;
+}
+
+main .section4 .section-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .section4 h1 {
+    font-size: 200%;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+main .section4 p {
+    text-align: center;
+}
+
+main .section4 .stars {
+    height: 50px;
+    background-image: url("../img/stars.svg");
+    background-size: contain;
+    width: 50%;
+    margin: 0 auto;
+}
+
+main .section4 .stars h3 {
+    text-align: center;
+    line-height: 50px;
+}
+
+main .section4 .section4-btn {
+    margin-top: 3%;
+    text-align: center;
+}
+/* Fine main */
+
+
+/* Footer */
+footer {
+    position: relative;
+    min-height: 550px;
+    background-color: rgb(25, 34, 33);
+}
+
+footer .footer-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 75%;
+    padding: 5% 0;
+}
+
+/* Footer top */
+.col {
+    width: calc(100% / 5);
+    float: left;
+}
+
+footer ul li {
+    list-style: none;
+    padding: 7px;
+    font-size: 80%
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .footer-top #flag {
+    width: 10%;
+    vertical-align: middle;
+}
+/* Fine footer top */
+
+footer hr {
+    float: left;
+    margin: 3% 0;
+    width: 100%;
+}
+
+footer hr {
+    max-width: 100%;
+}
+
+/* Footer bottom */
+footer .footer-bottom .footer-logo-box {
+    float: left;
+    width: 10px;
+}
+
+footer .footer-bottom .footer-bottom-btn {
+    float: right;
+}
+/* Fine footer bottom */
+/* Fine footer */
